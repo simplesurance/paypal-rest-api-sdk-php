@@ -73,7 +73,7 @@ class PayPalLogger extends AbstractLogger
         }
     }
 
-    public function log($level, Stringable|string $message, array $context = array())
+    public function log($level, Stringable|string $message, array $context = array()): void
     {
         if ($this->isLoggingEnabled) {
             // Checks if the message is at level below configured logging level
